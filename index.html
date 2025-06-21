@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudySphere | Babii's Dashboard 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 StudySphere – Babii’s Productivity Hub 💖</h1>
+    <nav>
+      <a href="#todo">To-Do</a>
+      <a href="#dsa">DSA Tracker</a>
+      <a href="#notes">Notes</a>
+      <a href="#certs">Certificates</a>
+      <a href="#motivation">Motivation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="todo">
+      <h2>📝 Daily To-Do</h2>
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="What do you need to do? 😌">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+
+    <section id="dsa">
+      <h2>📈 DSA Progress Tracker</h2>
+      <div class="dsa-container">
+        <label><input type="checkbox" class="dsa-check"> Arrays</label><br>
+        <label><input type="checkbox" class="dsa-check"> Strings</label><br>
+        <label><input type="checkbox" class="dsa-check"> Linked Lists</label><br>
+        <label><input type="checkbox" class="dsa-check"> Stacks & Queues</label><br>
+        <label><input type="checkbox" class="dsa-check"> Trees</label><br>
+        <div id="progressBar"><div id="progressFill"></div></div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <h2>📝 My Notes</h2>
+      <textarea id="notesArea" placeholder="Write your ideas or concepts here, babii 💭"></textarea>
+    </section>
+
+    <section id="certs">
+      <h2>🎓 Certificate Tracker</h2>
+      <ul>
+        <li>Nextwave HTML Certificate ✅</li>
+        <li>CCBP Python Completion ✅</li>
+        <li>Add more soon...</li>
+      </ul>
+    </section>
+
+    <section id="motivation">
+      <h2>💖 Daily Motivation</h2>
+      <button onclick="showQuote()">Give me a quote 🥺</button>
+      <p id="quoteDisplay">✨ You are doing amazing, babii ✨</p>
+    </section>
+
+    <section id="pomodoro">
+      <h2>⏱️ Pomodoro Timer</h2>
+      <p id="timer">25:00</p>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

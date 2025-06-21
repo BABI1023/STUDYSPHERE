@@ -1,0 +1,90 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff66b2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #ffb3d9;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+}
+
+.todo-container input {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #ffb3d9;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.todo-container button {
+  padding: 10px;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ffd6e0;
+}
+
+#quoteDisplay {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 18px;
+  color: #c71585;
+}
+
+#progressBar {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#progressFill {
+  height: 20px;
+  background-color: #ff66b2;
+  border-radius: 10px;
+  width: 0%;
+}
+
+#timer {
+  font-size: 30px;
+  margin: 10px 0;
+}
